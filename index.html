@@ -1,4 +1,23 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Kalam Dawat Puja</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kalam Dawat Puja</title>
+<meta name="description" content="A digital tribute to Shri Chitragupt Maharaj Ji. Light the lamp and watch the pen write his name.">
+<link rel="canonical" href="https://prakhyat-srivastava.github.io/kalam-dawat-puja/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kalam Dawat Puja">
+<meta property="og:url" content="https://prakhyat-srivastava.github.io/kalam-dawat-puja/">
+<meta property="og:title" content="कलम दवात पूजा · Kalam Dawat Puja">
+<meta property="og:description" content="A digital tribute to Shri Chitragupt Maharaj Ji. Light the lamp and watch the pen write his name.">
+<meta property="og:image" content="https://prakhyat-srivastava.github.io/kalam-dawat-puja/og-banner.jpg">
+<meta property="og:image:secure_url" content="https://prakhyat-srivastava.github.io/kalam-dawat-puja/og-banner.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kalam Dawat Puja, in worship of Shri Chitragupt Maharaj Ji">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="कलम दवात पूजा · Kalam Dawat Puja">
+<meta name="twitter:description" content="A digital tribute to Shri Chitragupt Maharaj Ji.">
+<meta name="twitter:image" content="https://prakhyat-srivastava.github.io/kalam-dawat-puja/og-banner.jpg">
+<style>:root{color-scheme:light}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>Kalam Dawat Puja</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="theme-color" content="#0B0D1F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,6 +241,14 @@ body.entered .d1{transition-delay:calc(var(--beat)*1)}body.entered .d2{transitio
 .ticker{font:300 italic 1.08rem/1.45 var(--f-body);color:var(--patra);min-height:2.9em;transition:opacity .6s}
 .ticker.sw{opacity:0}
 .desk-note{font-size:.84rem;color:var(--fg-faint);max-width:24em}
+.ticker{font-family:"Spectral","Tiro Devanagari Hindi",Georgia,serif}
+.mala{display:flex;align-items:center;gap:.6em;font-size:.72rem;letter-spacing:.18em;color:var(--fg-dim);font-variant-numeric:tabular-nums}
+.mala span:first-child{font:400 .95rem/1 var(--f-hindi);letter-spacing:.02em;color:var(--haldi);padding-top:.2em}
+.mala b{font:400 1.05rem/1 var(--f-display);color:var(--patra);letter-spacing:0;min-width:1.6em;text-align:right}
+.mala i{width:74px;height:2px;background:var(--fg-faint);display:block}
+.mala u{display:block;height:100%;width:0;background:var(--haldi);box-shadow:0 0 8px rgba(224,165,38,.7);transition:width 1s}
+.o-diya.flare .flame{transform:scale(1.9)}
+.shrine .murti{cursor:pointer}
 
 /* scene 4 */
 #vidya .l-wood img{transform:scaleX(-1)}
@@ -264,7 +291,25 @@ body.entered .d1{transition-delay:calc(var(--beat)*1)}body.entered .d2{transitio
 .leaf .by{font:400 .7rem/1 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:rgba(20,23,58,.62);margin-top:.6rem}
 .leaf .name{font:400 clamp(1.5rem,4.6vw,2.3rem)/1.2 var(--f-display);color:var(--ink);letter-spacing:.02em}
 .leaf .rule{width:190px;max-width:60%;filter:brightness(.5) sepia(1) saturate(2.5)}
-.leaf .meta{font-size:.84rem;color:rgba(20,23,58,.6)}
+.leaf>*:not(.corner):not(.seal){position:relative;z-index:1}
+.leaf .seal{position:absolute;left:50%;top:50%;width:min(92%,600px);aspect-ratio:1;translate:-50% -50%;opacity:.11;filter:brightness(.45) sepia(1) saturate(2.2);pointer-events:none;animation:spin calc(var(--beat)*420) linear infinite}
+.leaf .bless{font:400 clamp(1.08rem,2.7vw,1.34rem)/1.75 var(--f-hindi);color:rgba(20,23,58,.92);max-width:24em}
+.leaf .gloss{font-style:italic;font-weight:300;margin-top:-.6rem}
+.leaf .by{display:flex;align-items:center;gap:1.1em}
+.leaf .by::before,.leaf .by::after{content:"";width:34px;height:1px;background:rgba(160,60,30,.55)}
+.leaf .name{font-size:clamp(1.75rem,5.6vw,3rem);margin-top:-.35rem}
+.share{width:100%;max-width:32rem;display:flex;flex-direction:column;align-items:center;gap:.8rem;margin-top:1rem;padding-top:1.5rem;border-top:1px dashed rgba(160,60,30,.45)}
+.share-h{display:flex;flex-direction:column;gap:.3rem}
+.share-h span:first-child{font:400 clamp(1.15rem,3vw,1.4rem)/1.5 var(--f-hindi);color:#8f2414}
+.share-h span+span{font-size:.68rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(20,23,58,.62)}
+.linkrow{display:flex;align-items:stretch;width:100%;border:1px solid rgba(20,23,58,.45);background:rgba(255,251,238,.6);box-shadow:inset 0 1px 6px rgba(140,96,30,.18)}
+.linkrow .url{flex:1;min-width:0;padding:.8em .95em;font:400 .84rem/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);text-align:left;overflow-wrap:anywhere;user-select:all;-webkit-user-select:all}
+.linkrow .cpy{flex:none;min-width:7.6em;padding:.9em 1.1em;font:400 .7rem/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--patra);background:var(--ink);transition:background .3s}
+.linkrow .cpy:hover,.linkrow .cpy:focus-visible{background:#8f2414}
+.linkrow .cpy.ok{background:#2f6b3a}
+.share-note{font-size:.84rem;color:rgba(20,23,58,.66);min-height:1.4em}
+.leaf a.btn{text-decoration:none}
+@media (max-width:520px){.linkrow{flex-direction:column}.linkrow .url{text-align:center}}
 .leaf .acts{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:.5rem}
 .leaf .btn{color:var(--ink);background:linear-gradient(90deg,var(--ink),#26306e) no-repeat 0 0/0% 100%,rgba(20,23,58,.07)}
 .leaf .btn::before{border-color:rgba(20,23,58,.45)}
@@ -454,7 +499,8 @@ body.puja #fx{z-index:85}
       <div class="copy" data-from=".12" data-to=".9">
         <div class="eyebrow"><span class="hi" lang="hi">लेखन</span><span>The Writing</span></div>
         <div class="ticker" id="ticker" aria-live="polite">The pen is dipped. The first line is for Shri Ganesha.</div>
-        <p class="desk-note">Puja mode keeps this desk on screen and the pen writing, for as long as the lamp is lit.</p>
+        <div class="mala" title="Names written, counted towards a mala of 108"><span lang="hi">नाम लेखन</span><b id="malaN">0</b><span>/ 108</span><i><u id="malaBar"></u></i></div>
+        <p class="desk-note">Touch the lamp, the inkpot, the thali and the pothi. Puja mode keeps this desk on screen and the pen writing.</p>
         <button class="btn" id="pujaBtn2" type="button"><i class="spark"></i>Enter puja mode</button>
       </div>
       <img class="bloom" src="assets/13-ink-bloom-3.webp" alt="" loading="lazy">
@@ -503,12 +549,19 @@ body.puja #fx{z-index:85}
     <div class="bg"><img src="assets/06-shrine-wall.webp" alt="" loading="lazy"></div>
     <div class="leaf">
       <img class="corner a" src="assets/19-corner.webp" alt="" loading="lazy"><img class="corner b" src="assets/19-corner.webp" alt="" loading="lazy"><img class="corner c" src="assets/19-corner.webp" alt="" loading="lazy"><img class="corner d" src="assets/19-corner.webp" alt="" loading="lazy">
+      <img class="seal" src="assets/15-mandala.webp" alt="" loading="lazy">
       <div class="shubh" lang="hi">॥ शुभमस्तु ॥</div>
-      <p>May it be auspicious. This page was made to stay open beside the books until the lamp burns down.</p>
+      <p class="bless" lang="hi">श्री चित्रगुप्त महाराज जी की कृपा आपकी कलम पर सदा बनी रहे।</p>
+      <p class="gloss">May the grace of Shri Chitragupt Maharaj Ji stay upon your pen, always.</p>
       <img class="rule" src="assets/19-divider.webp" alt="" loading="lazy">
       <div class="by">Created by</div>
       <div class="name">Prakhyat Nandan Srivastava</div>
-      <div class="meta">Kartik Shukla Dwitiya, Vikram Samvat 2083 · Music: Morning at the Ghat</div>
+      <div class="share">
+        <div class="share-h"><span lang="hi">कायस्थ परिवार के साथ बाँटें</span><span>Share with the Kayastha family</span></div>
+        <div class="linkrow"><span class="url" id="shareUrl">https://prakhyat-srivastava.github.io/kalam-dawat-puja/</span><button class="cpy" id="copyBtn" type="button">Copy link</button></div>
+        <a class="btn" id="waBtn" href="https://wa.me/" target="_blank" rel="noopener"><i class="spark"></i>Send on WhatsApp</a>
+        <div class="share-note" id="shareNote" aria-live="polite">Send it to family and friends with your greetings.</div>
+      </div>
       <div class="acts">
         <button class="btn" id="pujaBtn3" type="button"><i class="spark"></i>Enter puja mode</button>
         <button class="btn" id="topBtn" type="button">Return to the threshold</button>
@@ -618,6 +671,10 @@ document.addEventListener('pointerover',function(e){
   var t=e.target.closest&&e.target.closest('button,a,[data-cur],input');
   cur.classList.toggle('hov',!!t&&t.tagName!=='INPUT'); cur.classList.toggle('txt',!!t&&t.tagName==='INPUT');
 });
+
+document.addEventListener('pointerdown',function(e){ if(REDUCED) return; for(var i=0;i<10;i++) FX.spark(e.clientX+(Math.random()-.5)*16,e.clientY+(Math.random()-.5)*16); },{passive:true});
+// on a phone, tilting the device moves the layers the way the cursor does on a laptop
+window.addEventListener('deviceorientation',function(e){ if(FINE||e.gamma==null||e.beta==null) return; P.nx=clamp(e.gamma/22,-1,1); P.ny=clamp((e.beta-45)/26,-1,1); },{passive:true});
 
 /* ================= particles: dust, sparks, petals ================= */
 var FX=(function(){
@@ -829,6 +886,12 @@ var PAGES=[
        {t:'What I write today, may I remember.',font:'Italianno',size:.07,pen:'fountain',cap:'A line in English.'},
        {t:'॥ शुभमस्तु ॥',color:'red',size:.055,cap:'Shubhamastu. May it be auspicious.'}])
 ];
+var malaN=0; try{malaN=(+localStorage.getItem('kdp-mala')||0)%108;}catch(e){}
+function showMala(){ $('#malaN').textContent=malaN; $('#malaBar').style.width=(malaN/108*100)+'%'; }
+function countNames(t){ var n=t===HI?1:t===SR?2:0; if(!n) return; malaN+=n;
+  if(malaN>=108){ malaN=0; setTimeout(function(){caption('एक माला पूर्ण हुई · One mala of 108 names is complete.');},700); A.bell(311.13,.3,6); FX.petals(FINE?40:20); }
+  showMala(); try{localStorage.setItem('kdp-mala',malaN);}catch(e){} }
+showMala();
 var ticker=$('#ticker');
 function caption(t){ if(ticker._t===t) return; ticker._t=t; ticker.classList.add('sw'); setTimeout(function(){ticker.textContent=t;ticker.classList.remove('sw');},520); }
 async function manuscriptScript(w){
@@ -841,6 +904,7 @@ async function manuscriptScript(w){
       if(i%2===0) await w.dip();
       caption(line.cap);
       await w.write(line);
+      countNames(line.t);
       await w.beats(1);
     }
     await w.beats(6);
@@ -876,6 +940,13 @@ $('#ownForm').addEventListener('submit',function(e){
   ownQueue.push(t.slice(0,34)); inp.value=''; inp.blur(); $('#ownHint').textContent='The pen is writing it.'; if(ownWake){var r=ownWake;ownWake=null;r();}
 });
 $$('.desk .obj').forEach(function(o,i){o.addEventListener('pointerenter',function(){A.pluck(PENTA[i%PENTA.length],.045);});});
+var SAYINGS=['विद्या ददाति विनयम् · Learning gives humility.','सत्यमेव जयते · Truth alone prevails.','श्रद्धावान् लभते ज्ञानम् · The one with faith gains knowledge.','तमसो मा ज्योतिर्गमय · Lead me from darkness to light.'],sayI=0;
+function tap(sel,fn){var e=$(sel); if(e){e.setAttribute('data-cur',''); e.addEventListener('click',fn);}}
+tap('#lekhan .o-diya',function(e){var d=e.currentTarget; d.classList.add('flare'); A.puff(); A.pluck(PENTA[5],.08); setTimeout(function(){d.classList.remove('flare');},900);});
+tap('#dawat',function(){var d=$('#dawat'); d.classList.remove('dip'); void d.offsetWidth; d.classList.add('dip'); A.dip();});
+tap('#lekhan .o-thali',function(){FX.petals(FINE?26:14); A.bell(466.16,.16,3);});
+tap('#lekhan .o-pothi',function(){caption(SAYINGS[sayI++%SAYINGS.length]); A.page();});
+tap('.shrine .murti',function(){var s=$('.shrine').getBoundingClientRect(); FX.petals(FINE?30:16,s.left+s.width/2); A.bell(622.25,.18,3.2);});
 
 /* ================= puja mode ================= */
 var veil=$('#veil'), wake=null, uiT;
@@ -905,6 +976,25 @@ $('#pujaExit').addEventListener('click',leavePuja);
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') leavePuja(); });
 document.addEventListener('visibilitychange',function(){ if(!document.hidden&&body.classList.contains('puja')) askWake(); });
 document.addEventListener('pointerdown',function(){ if(body.classList.contains('puja')) pujaUI(); });
+
+/* ================= share ================= */
+(function(){
+  var URL_='https://prakhyat-srivastava.github.io/kalam-dawat-puja/';
+  var GREET='कलम दवात पूजा की हार्दिक शुभकामनाएँ।\nश्री चित्रगुप्त महाराज जी की कृपा आपकी कलम पर सदा बनी रहे।\n\n'+URL_;
+  var btn=$('#copyBtn'),note=$('#shareNote'),urlEl=$('#shareUrl'),t;
+  $('#waBtn').href='https://wa.me/?text='+encodeURIComponent(GREET);
+  function done(ok){
+    clearTimeout(t);
+    if(ok){btn.textContent='Copied';btn.classList.add('ok');note.textContent='Link copied. Paste it wherever you want to share it.';A.pluck(PENTA[4],.1);}
+    else{try{var r=document.createRange();r.selectNodeContents(urlEl);var s=window.getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}
+      note.textContent='The link is selected. Press Ctrl+C (or Cmd+C) to copy it.';}
+    t=setTimeout(function(){btn.textContent='Copy link';btn.classList.remove('ok');},2600);
+  }
+  btn.addEventListener('click',function(){
+    try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(URL_).then(function(){done(true);},function(){done(false);}); return; } }catch(e){}
+    done(false);
+  });
+})();
 
 /* ================= gate ================= */
 function enter(withSound){
